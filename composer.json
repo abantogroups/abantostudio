@@ -1,0 +1,36 @@
+{
+    "name": "abanto/abantostudio",
+    "description": "This is a laravel dashboard project",
+    "keywords": ["laravel", "admin", "panel" , "dashboard","abantostudio"],
+    "type": "package",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Md Abanto Islam",
+            "email": "abantogroups@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "files": [
+            "src/Http/Helpers/helper.php"
+        ],
+        "classmap": [
+            "src/Database/"
+        ],
+        "psr-4": {
+            "App\\": "app/",
+            "Abanto\\AbantoStudio\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Abanto\\AbantoStudio\\AbantoStudioServiceProvider"
+            ]
+        }
+    }
+
+
+}
